@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./assets/stylesheet/style.css" rel="stylesheet" />
+
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body onload="onLoad()">
+
+    <header class="jumbotron" style="background-image: url(./assets/images/bg-3.jpg)">
+<div class="border">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+   
+      <!-- This is where the current date and time should go! -->
+      <div id="clock"></div>
+      <div id="date" class="lead"></div>
+</div>
+
+    </header>
+    <br>
+    <br>
+
+    <hr>
+
+   
+
+      <!-- Timeblocks go here -->
+  
+   
+
+    <main>
+
+<section class="task-list">
+  <h2>Tasks</h2>
+
+ <form id="new-task-form">
+  <!-- 9 -->
+
+  <div id="tasks">
+    <label id="time0" class="lead" for="time">9:00 AM</label>
+    <div class="task">
+     
+      <div class="content">
+      
+        <input id="input0"
+        type="text" class="text"
+      placeholder="Click to edit"
+      />
+    
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="save" id="save" onclick="saveContent(0)">Save</button>
+      </div>
+    </div>
+  
+
+
+<!-- 10 -->
+
+
+<div id="tasks">
+  <label id="time1" class="lead" for="time">10:00 AM</label>
+  <div class="task">
+   
+    <div class="content">
+    
+      <input id="input1"
+      type="text" class="text"
+    placeholder="Click to edit"
+    />
+  
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="save" id="save" onclick="saveContent(1)">Save</button>
+    </div>
+  </div>
+
+
+
+
+<!-- 11 -->
+
+<div id="tasks">
+  <label id="time2" class="lead" for="time">11:00 AM</label>
+  <div class="task">
+    <div class="content">
+      
+      
+      <input id="input2"
+      type="text" class="text"
+      placeholder="Click to edit"
+      />
+      
+    </div>
+    <div class="actions">
+      <button type="submit" class="save" id="save" onclick="saveContent(2)">Save</button>
+    </div>
+  </div>
+
+  <!-- 12 -->
+
+  <div id="tasks">
+    <label id="time3" class="lead" for="time">12:00 PM</label>
+    <div class="task">
+      <div class="content">
+        
+       
+        <input id="input3"
+        type="text" class="text"
+        placeholder="Click to edit"
+        />
+       
+      </div>
+      <div class="actions">
+        <button type="submit" class="save" id="save" onclick="saveContent(3)">Save</button>
+      </div>
+    </div>
+
+    <!-- 1 -->
+
+    <div id="tasks">
+      <label id="time4" class="lead" for="time">1:00 PM</label>
+      <div class="task">
+        <div class="content">
+          
+         
+          <input id="input4"
+          text class="text"
+          placeholder="Click to edit"
+          />
+
+        </div>
+        <div class="actions">
+          <button type="submit" class="save" id="save" onclick="saveContent(4)">Save</button>
+        </div>
+      </div>
+
+      <!-- 2 -->
+
+      <div id="tasks">
+        <label id="time5" class="lead" for="time">2:00 PM</label>
+        <div class="task">
+          <div class="content">
+            
+           
+            <input id="input5"
+            type="text" class="text"
+            placeholder="Click to edit"
+            />
+         
+          </div>
+          <div class="actions">
+            <button type="submit" class="save" id="save" onclick="saveContent(5)">Save</button>
+          </div>
+        </div>
+
+<!-- 3 -->
+
+<div id="tasks">
+  <label id="time6" class="lead" for="time">3:00 PM</label>
+  <div class="task">
+    <div class="content">
+      
+
+      <input id="input6"
+      type="text" class="text"
+      placeholder="Click to edit"
+      />
+
+    </div>
+    <div class="actions">
+      <button type="submit" class="save" id="save" onclick="saveContent(6)">Save</button>
+    </div>
+  </div>
+
+  <!-- 4 -->
+
+  <div id="tasks">
+    <label id="time7" class="lead" for="time">4:00 PM</label>
+    <div class="task">
+      <div class="content">
+        
+        
+        <input id="input7"
+        type="text" class="text"
+        placeholder="Click to edit"
+        />
+       
+      </div>
+      <div class="actions">
+        <button type="submit" class="save" id="save" onclick="saveContent(7)">Save</button>
+      </div>
+    </div>
+
+    <!-- 5 -->
+
+    <div id="tasks">
+      <label id="time8" class="lead" for="time">5:00 PM</label>
+      <div class="task">
+        <div class="content">
+          
+         
+          <input id="input8"
+          type="text" class="text"
+         placeholder="Click to edit"
+         />
+         
+        </div>
+        <div class="actions">
+          <button type="submit" class="save" id="save" onclick="saveContent(8)">Save</button>
+        </div>
+      </div>
+
+   
+    </form>
+
+</section>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+  
+   
+
+
+  </body>
+</html>
