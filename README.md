@@ -32,7 +32,9 @@ Local storage is used to store and render anything the user inputs into each tex
 Mobile version pending!
 
 ## Contributing
-You can contribute to this project by submitting bugs via [ISSUES](https://github.com/StephCambria/NodeREADMEGenerator/issues).
+You can contribute to this project by submitting bugs via [ISSUES](https://github.com/StephCambria/WorkdayPlanner/issues).
+
+Image used is credited to Shawnn Tan via [unsplash](https://unsplash.com/photos/PE9iebFh2Ao).
 
 ## Tests
 All testing was done locally
